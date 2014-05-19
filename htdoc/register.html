@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big-5">
+<body  link=#0000ff alink=#0000ff vlink="0000ff" background=/picture/image.jpg>
+<title>註冊</title>
+
+<style type ="text/css">
+<!--
+body{
+	background-repeat:no-repeat;
+  
+	background-attachment:fixed;
+  
+
+  	background-position:center;
+	background-size:1400px 700px;
+}
+
+-->
+</style>
+</head>
+<body>
+<H1 align=center><font align=center size=7 face="標楷體" >歡迎加入會員<br>請輸入您的基本資料</font></H1>
+<form method=post action=register.php>
+<div class=tb style="font-family: 標楷體;">
+<table width=600 border=1 align=center style="font-size: 22px;">
+	<tr><td>*帳號	<td><input type=text name=a1>輸入你的帳號</tr>
+	<tr><td>*密碼	<td><input type=password name=a2>輸入你的密碼 </tr>
+	<tr><td>*確認密碼<td><input type=password name=b2>再次輸入你的密碼</tr>
+	<tr><td>*姓名(Eng.)<td><input type=text name=a3>輸入你的姓名 <font color=#ff0000>請用英文名字</font></tr>
+	<tr><td>電子信箱<td><input type=text name=a4>輸入你的信箱 </tr>
+	<tr><td>性別	<td>
+			男<input type=radio name=a3 value=1>
+			女<input type=radio name=a3 value=2>
+			選取你的性別 </tr>
+	<tr><td>星座	<td><select name=a6>
+			<option value=1>牡羊
+			<option value=2>金牛
+			<option value=3>雙子
+			<option value=4>巨蟹
+			<option value=5>獅子
+			<option value=6>處女
+			<option value=7>天秤
+			<option value=8>天蠍
+			<option value=9>射手
+			<option value=10>魔羯
+			<option value=11>水瓶
+			<option value=12>雙魚
+			</select>選取你的星座
+			</tr>
+	<tr><td>生日	<td><input type=text name=a7>年(西元)(E:1991)</tr> 
+	<tr><td>	<td><input type=text name=a8>月(Ex:10)</tr>
+	<tr><td>	<td><input type=text name=a9>日(Ex:05)</tr>
+	<tr><td>	<td><input type=submit value=送出>  
+  			<input type="button" value=回首頁 onclick="javascript:location.href='index_diary.html'">
+	<font color=ff0000>*號表示不得為空值</font>
+	</tr>
+
+</table>
+</div>
+</from>
+</body>
+
+</html>

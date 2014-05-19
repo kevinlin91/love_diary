@@ -1,0 +1,5 @@
+　不(ADV)　知(Vt)　為何(ADV)　我(N)　直覺(Vt)　告訴(Vt)　我(N)　你(N)　喜歡(Vt)　的(T)　是(Vt)　她(N)　不(ADV)　是(Vt)　我(N)　我(N)　很(ADV)　想(Vt)　攤手(N)　假裝(Vt)　不(ADV)　管(Vt)　了(T)　但是(C)　一次次(DET)　失敗(Vi)　曾經(ADV)　以為(Vt)　你(N)　應該(ADV)　也(ADV)　對(P)　我(N)　有(Vt)　好感(N)　看來(ADV)　或許(ADV)　是(Vt)　誤會(Vt)　一(DET)　場(M)　雖然(C)　沒有(ADV)　對(P)　你(N)　告白(N)　但是(C)　我(N)　覺得(Vt)
+　這(DET)　已經(ADV)　是(Vt)　個(M)　臨界點(N)　了(T)　我(N)　再(ADV)　繼續(Vt)　下去(ASP)
+　可能(ADV)　會(ADV)　放棄(Vt)　自己(N)　的(T)　尊嚴(N)　或許(ADV)　你(N)　感覺(Vt)　得(T)　出來(Vi)　或許(ADV)　你(N)　感覺(Vt)　不(ADV)　出來(Vi)
+　你(N)　給(Vt)　我(N)　的(T)　總是(ADV)　好少(Vi)　好少(Vi)　我(N)　總(ADV)　期待(Vt)　著(ASP)　你(N)　主動(Vi)　的(T)　那(DET)　天(M)　也(ADV)　一次次(DET)　的(T)　失望(Nv)　不(ADV)　知道(Vt)　要(ADV)　怎麼(ADV)　推斷(Vt)　你(N)　是(Vt)　個(M)　怎樣(Vi)　的(T)　人(N)　可是(C)　也(ADV)　不(ADV)　想(Vt)　管(Vt)　了(ASP)　我(N)　想(Vt)　放棄(Vt)　喜歡(Vt)　你(N)　認真(Vi)　的(T)　把(P)　你(N)　當成(Vt)　朋友(N)　就(ADV)　好(Vi)　可以(ADV)　成全(Vt)　我(N)　嗎(T)
+　)(PARENTHESISCATEGORY)　只(ADV)　能(ADV)　在(P)　最後(N)　再(ADV)　說(Vt)　一(DET)　次(M)　我(N)　喜歡(Vt)　你(N)

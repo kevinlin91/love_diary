@@ -1,0 +1,92 @@
+body {
+  background-image:url('b1.jpg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-size:cover;
+}
+.my_container {
+  margin: 70px auto;
+  width: 940px;
+}
+.left {
+  float: left;
+  width: 340px;
+  height: 300px;
+}
+.right {
+  float: right;
+  width: 600px;
+  height: 480px;
+}
+.diary_form {
+  width: 640px;
+  margin: 20px auto;
+}
+#result_face {
+  width: 200px;
+  height: 100px;
+  margin: 20px auto;
+  opacity: 0.5;
+  border-radius: 5px;
+  background-color: white;
+}
+#result_face:hover {
+  opacity: 0.6;
+}
+.result_song {
+  width: 200px;
+  height: 90px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+#title {
+  font-size: 3em;
+  font-weight: bold; 
+  margin-bottom: 20px;
+  font-family: 微軟正黑體;
+  color: pink;
+}
+#love_word {
+  font-size: 1.2em;
+  color: #C11629;
+}
+a.iframe {
+  margin: 10px auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 微軟正黑體;
+  color: #DE3E65;
+  text-decoration: none;
+}
+a.iframe:hover {
+  text-decoration: none;
+  color: #DE3E65;
+}
+a.iframe:visited, a.iframe:link {
+  text-decoration: none;
+  color: #DE3E65;
+}
+a.inline {
+  margin: 10px auto;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 微軟正黑體;
+  color: #DE3E65;
+  text-decoration: none;
+}
+a.inline:hover {
+  text-decoration: none;
+  color: #DE3E65;
+}
+a.inline:visited, a.inline:link {
+  text-decoration: none;
+  color: #DE3E65;
+}
+label {
+  color: black;
+  font-weight: bolder;
+}
+#input {
+  width:350px;
+}

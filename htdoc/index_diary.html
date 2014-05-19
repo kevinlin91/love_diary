@@ -1,0 +1,123 @@
+<html>
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big-5">
+<body  link=#000000 alink=#000000 vlink="000000" background=/picture/index.jpg>
+
+<title>愛情悄悄話</title>
+
+<style type ="text/css">
+<!--
+input,button,select,textarea{outline:none}
+textarea{resize:none}
+.button{
+	float: right;
+	width: 525px;
+	margin: 10px auto;
+}
+
+.btn_class {
+	font-size:16px;
+	font-family:DFKai-sb;
+	font-weight:normal;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	border-radius:9px;
+	border:2px solid #ffaa22;
+	padding:9px 18px;
+	text-decoration:none;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #ffec64), color-stop(100%, #ffab23) );
+	background:-moz-linear-gradient( center top, #ffec64 5%, #ffab23 100% );
+	background:-ms-linear-gradient( top, #ffec64 5%, #ffab23 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23');
+	background-color:#ffec64;
+	color:#333333;
+	display:inline-block;
+	text-shadow:-2px 2px 0px #ffee66;
+ 	-webkit-box-shadow:inset 1px 1px 0px 0px #fff6af;
+ 	-moz-box-shadow:inset 1px 1px 0px 0px #fff6af;
+ 	box-shadow:inset 1px 1px 0px 0px #fff6af;
+	margin: 10px auto;
+}
+.btn_class:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #ffab23), color-stop(100%, #ffec64) );
+	background:-moz-linear-gradient( center top, #ffab23 5%, #ffec64 100% );
+	background:-ms-linear-gradient( top, #ffab23 5%, #ffec64 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64');
+	background-color:#ffab23;
+}
+.btn_class:active {
+	position:relative;
+	top:1px;
+}
+.area {
+	margin: 20px auto;
+}
+.pic{
+	float: right;
+	width: 450px;
+}
+-->
+</style>
+</head>
+
+<body>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css" /> 
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js">
+</script>
+
+<h1 align=center><font align=center size=7 color=#C11629 face="標楷體" >愛情悄悄話-愛情日記</font></h1>
+
+<div class=mar align=center>
+<marquee align="middle"width="500"  height="30" style="text-align:center;font-family:Arial;color:#5577ff;font-size:20;text-align:center;word-spacing: 0; border-style: ridge">
+      點選購買日記開始註冊 若已是會員請點選登入 </marquee>
+</div>
+
+<div class=area align=center>
+<textarea rows="10" cols="20" readonly="true" style="font-size:22px" name="introduction" style="font-family: 標楷體;">
+  
+  
+  此為心情日記情緒偵測
+
+  與音樂系統的愛情日記
+
+  歡迎大家一起來玩玩看  
+</textarea>
+</div>
+
+<div class=button>
+  
+  <div class=btn_class >
+  <a href="register.html" style="text-decoration:none">購買日記</a>
+  </div>
+  <br>
+  <div class=btn_class >
+  <a href="javascript: $('#login').dialog({autoOpen: true, show:{effect:'drop', direction:'right', duration: 1500}, width: '640', height: 'auto', resizable: false});" style="text-decoration:none">登入</a>
+  </div>
+</div>
+
+<div class=pic>
+<img src ="./picture/logo.jpg">
+</div>
+
+
+
+
+<div title="登入" id="login" style="padding: 0.5em; font-family: 標楷體; font-size: 1.17em; line-height: 1.5em; letter-spacing: 0.1em; display: block; text-align: justify; display: none;">
+<form method=post action=login.php>
+<table width=600 border=1 align=center>
+	<tr><td>*帳號	<td><input type=text name=a1>輸入你的帳號</tr>
+	<tr><td>*密碼	<td><input type=password name=a2>輸入你的密碼 </tr>
+	
+	<tr><td>	<td><input type=submit value=登入>  
+			<input type="button" value=註冊 onclick="javascript:location.href='register.html'" style="text-decoration:none">
+	</tr>
+
+</table>
+
+</from>
+</div>
+
+</body>
+</html>

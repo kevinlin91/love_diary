@@ -1,0 +1,44 @@
+<meta http-equiv="Content-Type" content="text/html; charset=big-5" />
+<body  link=#0000ff alink=#0000ff vlink="0000ff" background=/picture/member.gif>
+<H1 align=center><font align=center size=7 face="標楷體">修改會員資料</font></H1>
+<form method=post action=update.php>';
+<div class=tb style="font-family: 標楷體;">
+<table width=600 border=1 align=center style="font-size: 20px;">
+	<tr><td>帳號不得修改</tr>
+	<tr><td>舊密碼	<td><input type=password name=c1>輸入你的舊密碼 </tr>
+	<tr><td>新密碼	<td><input type=password name=a1>輸入你要修改的密碼 </tr>
+	<tr><td>確認密碼<td><input type=password name=b1>再次輸入你的密碼</tr>
+	<tr><td>姓名(Eng.)<td><input type=text name=a2>輸入你要修改的姓名 <font color=#ff0000>請用英文名字</font></tr>
+	<tr><td>電子信箱<td><input type=text name=a3>輸入你要修改的信箱 </tr>
+	<tr><td>性別	<td>
+			不做更改<input type=radio name=a4 value=3>
+			男<input type=radio name=a4 value=1>
+			女<input type=radio name=a4 value=2>		
+			選取你的性別 </tr>
+	<tr><td>星座	<td><select name=a5>
+			<option value=13>不做更改
+			<option value=1>牡羊
+			<option value=2>金牛
+			<option value=3>雙子
+			<option value=4>巨蟹
+			<option value=5>獅子
+			<option value=6>處女
+			<option value=7>天秤
+			<option value=8>天蠍
+			<option value=9>射手
+			<option value=10>魔羯
+			<option value=11>水瓶
+			<option value=12>雙魚
+			</select>選取你的星座
+			</tr>
+	<tr><td>生日	<td><input type=text name=a6>年(西元)(E:1991)</tr> 
+	<tr><td>	<td><input type=text name=a7>月(Ex:10)</tr>
+	<tr><td>	<td><input type=text name=a8>日(Ex:05)</tr>
+	<tr><td> <font color=#ff0000>若需修改生日，則三項都要輸入!!</font></tr>
+	<tr><td> <font color=#ff0000>空白表示不做更改</font>	<td><input type=submit value=送出>  
+  			<input type="button" value=回會員頁面 onclick="javascript:location.href='member.php'">
+	</tr>
+
+</table>
+</div>
+</from>

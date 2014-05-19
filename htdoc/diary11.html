@@ -1,0 +1,153 @@
+﻿<html>
+<head>
+  <title>愛情悄悄話</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="stylesheet/diary.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://www.jacklmoore.com/colorbox/example4/colorbox.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.right').hide();
+      /*colorbox*/
+      $(".iframe").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+      $(".inline").colorbox({inline:true, width:"50%"});
+      /*submit*/
+      $("#submit").click(function (){
+        $.ajax({
+          type: "POST",
+          url:'final.php',
+          data: $("#input").serialize(),
+          success:function(data){
+            console.log(data);
+            var i=0;
+            $(".iframe").each(function() {
+              $(this).text(data[i]["song"]);
+              $(this).attr('href',"https://www.youtube.com/embed/"+data[i]["id"]);
+              i++; 
+            });
+            i=0;
+            $(".ly").each(function() {
+              $(this).text(data[i]["lyrics"]);
+              i++;
+            });
+
+            $(".right").fadeIn(); 
+          }  
+        });
+        $.ajax({
+          type: "POST",
+          url: 'svm/windows/predict2.php',
+          data: $("#input").serialize(),
+          success:function(data){
+            console.log(data);
+          if(data.search("love")!=-1){ $("#face").attr('src', "1.jpg");} else if(data.search("sweet")!=-1){ $("#face").attr('src', "2.jpg");} else if(data.search("complaint")!=-1){ $("#face").attr('src', "3.jpg");} if(data.search("break")!=-1){ $("#face").attr('src', "4.jpg");}        }
+        });  
+      });//end click
+
+ $("#save").click(function(){ $.ajax({		type: "POST",		url: 'lovediary.php',		data: $("#input").serialize(),		success:function(data){		}	});   });     /*clear*/
+      $("#clear").click(function (){
+        var i=1;
+        $(".right").hide();
+        $("#input").val("");
+        $("#is_public").prop("checked",false)
+      });//end click
+      
+      /*fb*/
+      $("#fb_share").click(function (){
+        FB.ui(
+        {
+          method: 'feed',
+          name: '愛情悄悄話',
+          link: 'http://cs.nccu.edu.tw/~s9940/diary.html',
+          picture: 'http://fbrell.com/f8.jpg',
+          caption: '透過日記推薦歌曲',
+          description: ''
+        },
+        function(response) {
+          if (response && response.post_id) {
+            alert('成功分享到facebook!');
+          } else {
+            alert('傳送失敗');
+          }
+        }
+        );
+      });//end click
+
+    });//end document
+  </script>
+</head>
+<body id="main">
+
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '266909406767142',                        // App ID from the app dashboard
+      channelUrl : 'http://www.cs.nccu.edu.tw/~s9940/diary.html', // Channel file for x-domain comms
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true                                  // Look for social plugins on the page
+    });
+
+    // Additional initialization code such as adding Event Listeners goes here
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+  <div class="my_container">
+    <div class="left">
+      <!form class="diary_form">
+        <h1 id="title"><span id="love_word">愛情</span>悄悄話</h1>
+        <div class="form-group" >
+          <textarea rows="8" class="form-control" name="mydiary" id="input" style="font-size:25px"></textarea>
+        </div>
+        <div class="form-inline">
+          <div class="checkbox">
+            <input type="checkbox" name="is_public" id="is_public">
+            <label>分享</label>
+          </div>
+          <input type="submit" class="btn btn-default" id="submit" value="送出">
+          <input type="submit" class="btn btn-default" id="clear" value="新的一頁">
+<input type="submit" class="btn btn-default" id="save" value="儲存" onclick="if(confirm('您確定要儲存此日記嗎??')) return true;else return false">           <input type="button" class="btn btn-default" value="回首頁" onclick="javascript:location.href='member.php'">
+        </div>
+      <!/form>
+    </div>
+    <div class="right">
+      <div id="result_face"><img id="face" src="" height=100px" class="img-rounded"></img></div>
+      <div class="result_song">
+        <a class="iframe" href="https://www.youtube.com/embed/nlcIKh6sBtc">song 1</a>
+        <a class='inline' href="#inline_content1">(歌詞)</a>
+      </div>
+      <div class="result_song">
+        <a class="iframe" href="https://www.youtube.com/embed/nlcIKh6sBtc">song 2</a>
+        <a class='inline' href="#inline_content2">(歌詞)</a>
+      </div>
+      <div class="result_song">
+        <a class="iframe" href="https://www.youtube.com/embed/nlcIKh6sBtc">song 3</a>
+        <a class='inline' href="#inline_content3">(歌詞)</a>
+      </div>
+    </div>
+  </div>
+
+  <div style='display:none'>
+    <div id='inline_content1' style='padding:10px; background:#fff;'><p class="ly"></p></div>
+  </div>
+  <div style='display:none'>
+    <div id='inline_content2' style='padding:10px; background:#fff;'><p class="ly"></p></div>
+  </div>
+  <div style='display:none'>
+    <div id='inline_content3' style='padding:10px; background:#fff;'><p class="ly"></p></div>
+  </div>
+
+</body>
+</html>

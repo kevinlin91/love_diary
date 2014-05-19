@@ -1,0 +1,2 @@
+朋友
+誰(N)　能夠(ADV)　划船(Vi)　不用(ADV)　漿(N)　誰(N)　能夠(ADV)　揚帆(Vi)　沒有(Vt)　風向(N)　誰(N)　能夠(ADV)　離開(Vt)　好朋友(N)　沒有(ADV)　感傷(Vt)　我(N)　可以(ADV)　划船(Vi)　不(ADV)　用(P)　漿(N)　我(N)　可以(ADV)　揚帆(Vi)　沒有(Vt)　風向(N)　但是(C)　朋友(N)　啊(T)　當(P)　你(N)　離(P)　我(N)　遠去(Vi)　我(N)　卻(ADV)　不能不(ADV)　感傷(Vt)　誰(N)　能夠(ADV)　划船(Vi)　不用(ADV)　漿(N)　誰(N)　能夠(ADV)　揚帆(Vi)　沒有(Vt)　風向(N)　誰(N)　能夠(ADV)　離開(Vt)　好朋友(N)　沒有(ADV)　感傷(Vt)　我(N)　可以(ADV)　划船(Vi)　不(ADV)　用(P)　漿(N)　我(N)　可以(ADV)　揚帆(Vi)　沒有(Vt)　風向(N)　但是(C)　朋友(N)　啊(T)　當(P)　你(N)　離(P)　我(N)　遠去(Vi)　我(N)　卻(ADV)　不能不(ADV)　感傷(Vt)　但是(C)　朋友(N)　啊(T)　當(P)　你(N)　離(P)　我(N)　遠去(Vi)　我(N)　卻(ADV)　不能不(ADV)　感傷(Vt)
